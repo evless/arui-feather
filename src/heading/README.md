@@ -12,5 +12,6 @@
     <Heading size='s'>
         Максимальная сумма каждого перечисления
     </Heading>
+    <IconLogoAlfabank />
 </div>
 ```
