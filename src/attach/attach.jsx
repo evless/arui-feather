@@ -193,7 +193,7 @@ class Attach extends React.Component {
             className: cn('button'),
             disabled: this.props.disabled,
             size: this.props.size,
-            icon: this.props.icon ? this.props.icon : <IconAttachment size={ this.props.size }/>,
+            icon: this.props.icon ? this.props.icon : <IconAttachment size={ this.props.size } />,
             focused: this.state.focused
         };
 
