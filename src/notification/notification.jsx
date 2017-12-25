@@ -8,7 +8,10 @@ import { autobind } from 'core-decorators';
 import React from 'react';
 import Type from 'prop-types';
 
-import Icon from '../icon/icon';
+import IconClose from '../icon/ui/close';
+import IconError from '../icon/ui/error';
+import IconFail from '../icon/ui/fail';
+import IconOk from '../icon/ui/ok';
 import IconButton from '../icon-button/icon-button';
 
 import cn from '../cn';
@@ -103,6 +106,14 @@ class Notification extends React.Component {
     }
 
     render(cn) {
+        let ToggledIcon;
+
+        switch (this.props.status) {
+            case 'error': ToggledIcon = IconError; break;
+            case 'fail': ToggledIcon = IconFail; break;
+            case 'ok': ToggledIcon = IconOk; break;
+        }
+
         return (
             <Swipeable onSwipe={ this.handleSwipe }>
                 <div
@@ -122,9 +133,8 @@ class Notification extends React.Component {
                     <div className={ cn('icon') }>
                         {
                             this.props.icon ||
-                            <Icon
+                            <ToggledIcon
                                 colored={ this.props.status === 'ok' || this.props.status === 'error' }
-                                name={ `action-${this.props.status}` }
                                 size='m'
                             />
                         }
@@ -144,8 +154,7 @@ class Notification extends React.Component {
                             size='m'
                             onClick={ this.handleCloserClick }
                         >
-                            <Icon
-                                name='tool-close'
+                            <IconClose
                                 size='m'
                             />
                         </IconButton>
