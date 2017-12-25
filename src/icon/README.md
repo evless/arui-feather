@@ -9,23 +9,23 @@ const IconCardunlock = require('./action/cardunlock').default;
 const IconChat = require('./action/chat').default;
 const IconConvert = require('./action/convert').default;
 const IconDelete = require('./action/delete').default;
-const IconDislikeFilled = require('./action/dislike-filled').default;
 const IconDislike = require('./action/dislike').default;
+const IconDislikeFilled = require('./action/dislike-filled').default;
 const IconEdit = require('./action/edit').default;
 const IconEmail = require('./action/email').default;
 const IconFilter = require('./action/filter').default;
-const IconLikeFilled = require('./action/like-filled').default;
 const IconLike = require('./action/like').default;
+const IconLikeFilled = require('./action/like-filled').default;
 const IconLock = require('./action/lock').default;
 const IconLogout = require('./action/logout').default;
 const IconPasswordChange = require('./action/password-change').default;
 const IconPasswordHide = require('./action/password-hide').default;
 const IconPasswordShow = require('./action/password-show').default;
 const IconPause = require('./action/pause').default;
-const IconPinUnpin = require('./action/pin-unpin').default;
 const IconPin = require('./action/pin').default;
-const IconPowerCard = require('./action/power-card').default;
+const IconPinUnpin = require('./action/pin-unpin').default;
 const IconPower = require('./action/power').default;
+const IconPowerCard = require('./action/power-card').default;
 const IconPrinter = require('./action/printer').default;
 const IconRepeat = require('./action/repeat').default;
 const IconReply = require('./action/reply').default;
@@ -131,20 +131,20 @@ const IconUserLogout = require('./action/user-logout').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconDislikeFilled size={ size } />
-                </span>
-            ))
-        }
-    </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
                     <IconDislike size={ size } />
                 </span>
             ))
         }
         <span className='column l'><IconDislike size='m' colored='true' /></span>
+    </div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
+                    <IconDislikeFilled size={ size } />
+                </span>
+            ))
+        }
     </div>
     <div className='row'>
         {
@@ -177,20 +177,20 @@ const IconUserLogout = require('./action/user-logout').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconLikeFilled size={ size } />
-                </span>
-            ))
-        }
-    </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
                     <IconLike size={ size } />
                 </span>
             ))
         }
         <span className='column l'><IconLike size='m' colored='true' /></span>
+    </div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
+                    <IconLikeFilled size={ size } />
+                </span>
+            ))
+        }
     </div>
     <div className='row'>
         {
@@ -250,15 +250,6 @@ const IconUserLogout = require('./action/user-logout').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconPinUnpin size={ size } />
-                </span>
-            ))
-        }
-    </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
                     <IconPin size={ size } />
                 </span>
             ))
@@ -268,7 +259,7 @@ const IconUserLogout = require('./action/user-logout').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconPowerCard size={ size } />
+                    <IconPinUnpin size={ size } />
                 </span>
             ))
         }
@@ -278,6 +269,15 @@ const IconUserLogout = require('./action/user-logout').default;
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
                     <IconPower size={ size } />
+                </span>
+            ))
+        }
+    </div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
+                    <IconPowerCard size={ size } />
                 </span>
             ))
         }
@@ -369,19 +369,19 @@ const IconUserLogout = require('./action/user-logout').default;
 const IconAccountAdd = require('./banking/account-add').default;
 const IconAccountDefault = require('./banking/account-default').default;
 const IconAccountShared = require('./banking/account-shared').default;
+const IconCard = require('./banking/card').default;
 const IconCardAccountsList = require('./banking/card-accounts-list').default;
 const IconCardActivation = require('./banking/card-activation').default;
 const IconCardExpences = require('./banking/card-expences').default;
 const IconCardList = require('./banking/card-list').default;
-const IconCard = require('./banking/card').default;
 const IconCash = require('./banking/cash').default;
-const IconCostsCard = require('./banking/costs-card').default;
 const IconCosts = require('./banking/costs').default;
+const IconCostsCard = require('./banking/costs-card').default;
 const IconCredit = require('./banking/credit').default;
 const IconCvv = require('./banking/cvv').default;
 const IconDeposit = require('./banking/deposit').default;
-const IconExpencesPlanner = require('./banking/expences-planner').default;
 const IconExpences = require('./banking/expences').default;
+const IconExpencesPlanner = require('./banking/expences-planner').default;
 const IconGoals = require('./banking/goals').default;
 const IconIncome = require('./banking/income').default;
 const IconInvestments = require('./banking/investments').default;
@@ -403,8 +403,8 @@ const IconReadyToSend = require('./banking/ready-to-send').default;
 const IconRequestMoney = require('./banking/request-money').default;
 const IconSent = require('./banking/sent').default;
 const IconSubscrption = require('./banking/subscrption').default;
-const IconTransferAnyBankCredit = require('./banking/transfer-any-bank-credit').default;
 const IconTransferAnyBank = require('./banking/transfer-any-bank').default;
+const IconTransferAnyBankCredit = require('./banking/transfer-any-bank-credit').default;
 const IconTransferBetweenAccounts = require('./banking/transfer-between-accounts').default;
 const IconTransferCard = require('./banking/transfer-card').default;
 const IconTransferExternal = require('./banking/transfer-external').default;
@@ -438,6 +438,15 @@ const IconTransferToCard = require('./banking/transfer-to-card').default;
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
                     <IconAccountShared size={ size } />
+                </span>
+            ))
+        }
+    </div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
+                    <IconCard size={ size } />
                 </span>
             ))
         }
@@ -482,15 +491,6 @@ const IconTransferToCard = require('./banking/transfer-to-card').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconCard size={ size } />
-                </span>
-            ))
-        }
-    </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
                     <IconCash size={ size } />
                 </span>
             ))
@@ -500,7 +500,7 @@ const IconTransferToCard = require('./banking/transfer-to-card').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconCostsCard size={ size } />
+                    <IconCosts size={ size } />
                 </span>
             ))
         }
@@ -509,7 +509,7 @@ const IconTransferToCard = require('./banking/transfer-to-card').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconCosts size={ size } />
+                    <IconCostsCard size={ size } />
                 </span>
             ))
         }
@@ -545,7 +545,7 @@ const IconTransferToCard = require('./banking/transfer-to-card').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconExpencesPlanner size={ size } />
+                    <IconExpences size={ size } />
                 </span>
             ))
         }
@@ -554,7 +554,7 @@ const IconTransferToCard = require('./banking/transfer-to-card').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconExpences size={ size } />
+                    <IconExpencesPlanner size={ size } />
                 </span>
             ))
         }
@@ -752,7 +752,7 @@ const IconTransferToCard = require('./banking/transfer-to-card').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconTransferAnyBankCredit size={ size } />
+                    <IconTransferAnyBank size={ size } />
                 </span>
             ))
         }
@@ -761,7 +761,7 @@ const IconTransferToCard = require('./banking/transfer-to-card').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconTransferAnyBank size={ size } />
+                    <IconTransferAnyBankCredit size={ size } />
                 </span>
             ))
         }
@@ -870,8 +870,8 @@ const IconCardBelkart = require('./brand/card-belkart').default;
 const IconCardMaestro = require('./brand/card-maestro').default;
 const IconCardMastercard = require('./brand/card-mastercard').default;
 const IconCardMir = require('./brand/card-mir').default;
-const IconCardVisaElectron = require('./brand/card-visa-electron').default;
 const IconCardVisa = require('./brand/card-visa').default;
+const IconCardVisaElectron = require('./brand/card-visa-electron').default;
 const IconLogoAlfabank = require('./brand/logo-alfabank').default;
 const IconMaestro = require('./brand/maestro').default;
 const IconMastercard = require('./brand/mastercard').default;
@@ -1259,19 +1259,6 @@ const IconVisa = require('./brand/visa').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconCardVisaElectron size={ size } />
-                </span>
-            ))
-        }
-        <span className='column l'><IconCardVisaElectron size='s' colored='true' /></span>
-        <span className='column l'><IconCardVisaElectron size='m' colored='true' /></span>
-        <span className='column l'><IconCardVisaElectron size='l' colored='true' /></span>
-        <span className='column l'><IconCardVisaElectron size='xl' colored='true' /></span>
-    </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
                     <IconCardVisa size={ size } />
                 </span>
             ))
@@ -1280,6 +1267,19 @@ const IconVisa = require('./brand/visa').default;
         <span className='column l'><IconCardVisa size='m' colored='true' /></span>
         <span className='column l'><IconCardVisa size='l' colored='true' /></span>
         <span className='column l'><IconCardVisa size='xl' colored='true' /></span>
+    </div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
+                    <IconCardVisaElectron size={ size } />
+                </span>
+            ))
+        }
+        <span className='column l'><IconCardVisaElectron size='s' colored='true' /></span>
+        <span className='column l'><IconCardVisaElectron size='m' colored='true' /></span>
+        <span className='column l'><IconCardVisaElectron size='l' colored='true' /></span>
+        <span className='column l'><IconCardVisaElectron size='xl' colored='true' /></span>
     </div>
     <div className='row'>
         {
@@ -1369,9 +1369,9 @@ const IconCategoryAuto = require('./category/category-auto').default;
 const IconCategoryAward = require('./category/category-award').default;
 const IconCategoryBooksMovies = require('./category/category-books-movies').default;
 const IconCategoryBudget = require('./category/category-budget').default;
+const IconCategoryBusiness = require('./category/category-business').default;
 const IconCategoryBusinessActivity = require('./category/category-business-activity').default;
 const IconCategoryBusinessTrip = require('./category/category-business-trip').default;
-const IconCategoryBusiness = require('./category/category-business').default;
 const IconCategoryCar = require('./category/category-car').default;
 const IconCategoryCash = require('./category/category-cash').default;
 const IconCategoryCashback = require('./category/category-cashback').default;
@@ -1486,6 +1486,15 @@ const IconUtilities = require('./category/utilities').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
+                    <IconCategoryBusiness size={ size } />
+                </span>
+            ))
+        }
+    </div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
                     <IconCategoryBusinessActivity size={ size } />
                 </span>
             ))
@@ -1496,15 +1505,6 @@ const IconUtilities = require('./category/utilities').default;
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
                     <IconCategoryBusinessTrip size={ size } />
-                </span>
-            ))
-        }
-    </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
-                    <IconCategoryBusiness size={ size } />
                 </span>
             ))
         }
@@ -1998,15 +1998,24 @@ const IconUtilities = require('./category/utilities').default;
 </div>
 ```
 ```jsx
+const IconCurrency = require('./currency/currency').default;
 const IconCurrencyChf = require('./currency/currency-chf').default;
 const IconCurrencyEur = require('./currency/currency-eur').default;
 const IconCurrencyGbp = require('./currency/currency-gbp').default;
 const IconCurrencyJpy = require('./currency/currency-jpy').default;
 const IconCurrencyRub = require('./currency/currency-rub').default;
 const IconCurrencyUsd = require('./currency/currency-usd').default;
-const IconCurrency = require('./currency/currency').default;
 
 <div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
+                    <IconCurrency size={ size } />
+                </span>
+            ))
+        }
+    </div>
     <div className='row'>
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
@@ -2061,15 +2070,6 @@ const IconCurrency = require('./currency/currency').default;
             ))
         }
     </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
-                    <IconCurrency size={ size } />
-                </span>
-            ))
-        }
-    </div>
 </div>
 ```
 ```jsx
@@ -2083,9 +2083,9 @@ const IconBag = require('./entity/bag').default;
 const IconCalendar = require('./entity/calendar').default;
 const IconClock = require('./entity/clock').default;
 const IconContactList = require('./entity/contact-list').default;
+const IconContactless = require('./entity/contactless').default;
 const IconContactlessOff = require('./entity/contactless-off').default;
 const IconContactlessOn = require('./entity/contactless-on').default;
-const IconContactless = require('./entity/contactless').default;
 const IconDirections = require('./entity/directions').default;
 const IconDiscount = require('./entity/discount').default;
 const IconDraft = require('./entity/draft').default;
@@ -2202,6 +2202,15 @@ const IconSite = require('./entity/site').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
+                    <IconContactless size={ size } />
+                </span>
+            ))
+        }
+    </div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
                     <IconContactlessOff size={ size } />
                 </span>
             ))
@@ -2212,15 +2221,6 @@ const IconSite = require('./entity/site').default;
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
                     <IconContactlessOn size={ size } />
-                </span>
-            ))
-        }
-    </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
-                    <IconContactless size={ size } />
                 </span>
             ))
         }
@@ -2408,13 +2408,13 @@ const IconSite = require('./entity/site').default;
 </div>
 ```
 ```jsx
+const IconAccount = require('./file/account').default;
 const IconAccountEuro = require('./file/account-euro').default;
 const IconAccountInfo = require('./file/account-info').default;
 const IconAccountMain = require('./file/account-main').default;
 const IconAccountRub = require('./file/account-rub').default;
 const IconAccountText = require('./file/account-text').default;
 const IconAccountUsd = require('./file/account-usd').default;
-const IconAccount = require('./file/account').default;
 const IconFormat1c = require('./file/format-1c').default;
 const IconFormatAttach = require('./file/format-attach').default;
 const IconFormatCsv = require('./file/format-csv').default;
@@ -2431,6 +2431,15 @@ const IconFormatXml = require('./file/format-xml').default;
 const IconFormatZip = require('./file/format-zip').default;
 
 <div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
+                    <IconAccount size={ size } />
+                </span>
+            ))
+        }
+    </div>
     <div className='row'>
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
@@ -2481,15 +2490,6 @@ const IconFormatZip = require('./file/format-zip').default;
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
                     <IconAccountUsd size={ size } />
-                </span>
-            ))
-        }
-    </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
-                    <IconAccount size={ size } />
                 </span>
             ))
         }
@@ -2633,13 +2633,13 @@ const IconDown = require('./ui/down').default;
 const IconError = require('./ui/error').default;
 const IconExpandDown = require('./ui/expand-down').default;
 const IconFail = require('./ui/fail').default;
-const IconFavoriteActive = require('./ui/favorite-active').default;
 const IconFavorite = require('./ui/favorite').default;
+const IconFavoriteActive = require('./ui/favorite-active').default;
 const IconFavourites = require('./ui/favourites').default;
 const IconFeature = require('./ui/feature').default;
-const IconFeedbackStarSelected = require('./ui/feedback-star-selected').default;
-const IconFeedbackStar = require('./ui/feedback-star').default;
 const IconFeedback = require('./ui/feedback').default;
+const IconFeedbackStar = require('./ui/feedback-star').default;
+const IconFeedbackStarSelected = require('./ui/feedback-star-selected').default;
 const IconGeolocation = require('./ui/geolocation').default;
 const IconHelp = require('./ui/help').default;
 const IconHelpfilled = require('./ui/helpfilled').default;
@@ -2647,8 +2647,8 @@ const IconInfo = require('./ui/info').default;
 const IconLeft = require('./ui/left').default;
 const IconLocation = require('./ui/location').default;
 const IconMenuModeCheck = require('./ui/menu-mode-check').default;
-const IconOkFilled = require('./ui/ok-filled').default;
 const IconOk = require('./ui/ok').default;
+const IconOkFilled = require('./ui/ok-filled').default;
 const IconPlay = require('./ui/play').default;
 const IconRight = require('./ui/right').default;
 const IconSelectTick = require('./ui/select-tick').default;
@@ -2760,7 +2760,7 @@ const IconVerifying = require('./ui/verifying').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconFavoriteActive size={ size } />
+                    <IconFavorite size={ size } />
                 </span>
             ))
         }
@@ -2769,7 +2769,7 @@ const IconVerifying = require('./ui/verifying').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconFavorite size={ size } />
+                    <IconFavoriteActive size={ size } />
                 </span>
             ))
         }
@@ -2797,11 +2797,10 @@ const IconVerifying = require('./ui/verifying').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconFeedbackStarSelected size={ size } />
+                    <IconFeedback size={ size } />
                 </span>
             ))
         }
-        <span className='column l'><IconFeedbackStarSelected size='m' colored='true' /></span>
     </div>
     <div className='row'>
         {
@@ -2816,10 +2815,11 @@ const IconVerifying = require('./ui/verifying').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconFeedback size={ size } />
+                    <IconFeedbackStarSelected size={ size } />
                 </span>
             ))
         }
+        <span className='column l'><IconFeedbackStarSelected size='m' colored='true' /></span>
     </div>
     <div className='row'>
         {
@@ -2888,15 +2888,6 @@ const IconVerifying = require('./ui/verifying').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconOkFilled size={ size } />
-                </span>
-            ))
-        }
-    </div>
-    <div className='row'>
-        {
-            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
-                <span className='column l' key={ size }>
                     <IconOk size={ size } />
                 </span>
             ))
@@ -2905,6 +2896,15 @@ const IconVerifying = require('./ui/verifying').default;
         <span className='column l'><IconOk size='m' colored='true' /></span>
         <span className='column l'><IconOk size='l' colored='true' /></span>
         <span className='column l'><IconOk size='xl' colored='true' /></span>
+    </div>
+    <div className='row'>
+        {
+            ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
+                <span className='column l' key={ size }>
+                    <IconOkFilled size={ size } />
+                </span>
+            ))
+        }
     </div>
     <div className='row'>
         {
@@ -3009,8 +3009,8 @@ const IconVerifying = require('./ui/verifying').default;
 ```
 ```jsx
 const IconManager = require('./user/manager').default;
-const IconUserBody = require('./user/user-body').default;
 const IconUser = require('./user/user').default;
+const IconUserBody = require('./user/user-body').default;
 
 <div>
     <div className='row'>
@@ -3026,7 +3026,7 @@ const IconUser = require('./user/user').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconUserBody size={ size } />
+                    <IconUser size={ size } />
                 </span>
             ))
         }
@@ -3035,7 +3035,7 @@ const IconUser = require('./user/user').default;
         {
             ['s', 'm', 'l', 'xl', 'xxl'].map(size => (
                 <span className='column l' key={ size }>
-                    <IconUser size={ size } />
+                    <IconUserBody size={ size } />
                 </span>
             ))
         }
