@@ -32,7 +32,7 @@
     "styleguide-build": "styleguidist build",
     "lint-staged": "lint-staged",
     "flag-icon-build": "gulp --gulpfile ./src/flag-icon/flag-icon.gulpfile.js",
-    "icons": "node ./src/icon/build-icons.js"
+    "icons": "node ./tools/icon/build-icons.js"
   },
   "lint-staged": {
     "concurrent": false,

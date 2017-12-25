@@ -85,7 +85,7 @@ const clean = new Promise((resolve) => {
 // Get Handlebars template
 const getTemplate = (filename, data) => {
     let template = handlebars.compile(
-        fs.readFileSync(`./src/icon/${filename}.hbs`, 'utf8')
+        fs.readFileSync(`./tools/icon/${filename}.hbs`, 'utf8')
     );
     return template(data);
 };

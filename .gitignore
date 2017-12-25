@@ -13,3 +13,13 @@ coverage/
 gemini-coverage/
 gemini-report/
 tools/modernizr.js
+
+src/icon/action/
+src/icon/banking/
+src/icon/brand/
+src/icon/category/
+src/icon/currency/
+src/icon/entity/
+src/icon/file/
+src/icon/ui/
+src/icon/user/

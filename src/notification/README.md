@@ -69,6 +69,7 @@ initialState = {
 Сообщение с иконкой
 ```jsx
 const IconCalendar = require('./../icon/entity/calendar').default;
+
 initialState = {
     visible: false
 };
